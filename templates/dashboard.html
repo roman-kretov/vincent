@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Patients</h2>
+    {% for patient in patients %}
+        <p>Name: {{ patient.name }}, Age: {{ patient.age }}, Condition: {{ patient.condition }}</p>
+    {% endfor %}
+    <a href="/logout">Logout</a>
+</body>
+</html>
+
